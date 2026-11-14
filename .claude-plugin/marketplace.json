@@ -1,0 +1,17 @@
+{
+  "name": "mldlc-kit",
+  "description": "A gated ML development life cycle for Claude Code: intent, spec, data, build, evaluate, release, operate and iterate.",
+  "owner": {
+    "name": "The Majlis of AI",
+    "url": "https://github.com/majlisofai"
+  },
+  "plugins": [
+    {
+      "name": "mldlc",
+      "description": "Skills for each stage gate of an ML model's life cycle. Install the mldlc command too: it decides the gates.",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}

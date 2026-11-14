@@ -1,0 +1,24 @@
+{
+  "name": "mldlc",
+  "displayName": "MLDLC: a gated ML life cycle",
+  "description": "Skills for taking an ML model from intent.md and spec.md to production and back again when something changes. One skill per stage gate; the mldlc command decides what can be decided by checks.",
+  "version": "0.1.0",
+  "author": {
+    "name": "The Majlis of AI",
+    "url": "https://github.com/majlisofai"
+  },
+  "skills": [
+    "./skills/mldlc",
+    "./skills/mldlc-intent",
+    "./skills/mldlc-spec",
+    "./skills/mldlc-data",
+    "./skills/mldlc-build",
+    "./skills/mldlc-evaluate",
+    "./skills/mldlc-release",
+    "./skills/mldlc-operate",
+    "./skills/mldlc-iterate"
+  ],
+  "homepage": "https://github.com/majlisofai/mldlc-kit",
+  "repository": "https://github.com/majlisofai/mldlc-kit",
+  "license": "MIT"
+}
