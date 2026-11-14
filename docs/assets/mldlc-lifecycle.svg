@@ -1,103 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" role="img" aria-label="The ML development life cycle: intent, spec, data, build, evaluate and release gates, then operate. A person approves intent, spec and release; checks decide data, build and evaluate. A change re-enters the earliest gate it touches and makes every later gate stale.">
-<title>ML development life cycle (MLDLC)</title>
-<desc>Six gates from intent to release, then operate. Each gate has a skill. Intent, spec and release are approved by a person; data, build and evaluate are decided by checks. A change re-enters the earliest gate it touches.</desc>
-<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker></defs>
-<rect x="0" y="0" width="960" height="470" rx="14" fill="#f7f8fa" stroke="#d5d9e0" stroke-width="1.5"/>
-<text x="24" y="38" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#1f2937" text-anchor="start">ML development life cycle (MLDLC)</text>
-<text x="24" y="60" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#6b7280" text-anchor="start">Modelled on ADLC. Each gate has a skill; deterministic checks decide what they can, a person decides the rest.</text>
-<rect x="660" y="24" width="14" height="14" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="1.6"/>
-<text x="680" y="36" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start">a person approves</text>
-<rect x="800" y="24" width="14" height="14" rx="3" fill="#ecfdf5" stroke="#0f766e" stroke-width="1.6"/>
-<text x="820" y="36" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="start">checks decide</text>
-<text x="76.0" y="90" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="middle">ADLC: Author</text>
-<rect x="17" y="100" width="118" height="92" rx="9" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
-<text x="29" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#78350f" text-anchor="start">G0</text>
-<text x="29" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1f2937" text-anchor="start">Intent</text>
-<text x="29" y="166" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">intent.md</text>
-<text x="29" y="184" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#b45309" text-anchor="start">person</text>
-<text x="76.0" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle">mldlc-intent</text>
-<polyline points="135,146 151,146" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
-<text x="210.0" y="90" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="middle">ADLC: Author</text>
-<rect x="151" y="100" width="118" height="92" rx="9" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
-<text x="163" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#78350f" text-anchor="start">G1</text>
-<text x="163" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1f2937" text-anchor="start">Spec</text>
-<text x="163" y="166" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">spec.md</text>
-<text x="163" y="184" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#b45309" text-anchor="start">person</text>
-<text x="210.0" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle">mldlc-spec</text>
-<polyline points="269,146 285,146" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
-<text x="344.0" y="90" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="middle">ADLC: Discover</text>
-<rect x="285" y="100" width="118" height="92" rx="9" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
-<text x="297" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f766e" text-anchor="start">G2</text>
-<text x="297" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1f2937" text-anchor="start">Data</text>
-<text x="297" y="166" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">contracts + DVC</text>
-<text x="297" y="184" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f766e" text-anchor="start">checks</text>
-<text x="344.0" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle">mldlc-data</text>
-<polyline points="403,146 419,146" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
-<text x="478.0" y="90" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="middle">ADLC: Scaffold</text>
-<rect x="419" y="100" width="118" height="92" rx="9" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
-<text x="431" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f766e" text-anchor="start">G3</text>
-<text x="431" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1f2937" text-anchor="start">Build</text>
-<text x="431" y="166" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">run + model</text>
-<text x="431" y="184" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f766e" text-anchor="start">checks</text>
-<text x="478.0" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle">mldlc-build</text>
-<polyline points="537,146 553,146" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
-<text x="612.0" y="90" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="middle">ADLC: Test</text>
-<rect x="553" y="100" width="118" height="92" rx="9" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
-<text x="565" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#0f766e" text-anchor="start">G4</text>
-<text x="565" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1f2937" text-anchor="start">Evaluate</text>
-<text x="565" y="166" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">acceptance</text>
-<text x="565" y="184" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f766e" text-anchor="start">checks</text>
-<text x="612.0" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle">mldlc-evaluate</text>
-<polyline points="671,146 687,146" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
-<text x="746.0" y="90" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="middle">ADLC: Deploy</text>
-<rect x="687" y="100" width="118" height="92" rx="9" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
-<text x="699" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#78350f" text-anchor="start">G5</text>
-<text x="699" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1f2937" text-anchor="start">Release</text>
-<text x="699" y="166" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">card + alias</text>
-<text x="699" y="184" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#b45309" text-anchor="start">person</text>
-<text x="746.0" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle">mldlc-release</text>
-<polyline points="805,146 821,146" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#a)"/>
-<rect x="821" y="100" width="118" height="92" rx="9" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
-<text x="833" y="126" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#1d4ed8" text-anchor="start">Operate</text>
-<text x="833" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">triggers watch</text>
-<text x="833" y="162" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">the production</text>
-<text x="833" y="178" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#6b7280" text-anchor="start">model</text>
-<text x="880.0" y="90" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#6b7280" text-anchor="middle">ADLC: Observe</text>
-<text x="880.0" y="212" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1f2937" text-anchor="middle">mldlc-operate</text>
-<text x="24" y="252" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" fill="#1f2937" text-anchor="start">A change re-enters the earliest gate it touches (skill: mldlc-iterate). Every later gate goes stale.</text>
-<rect x="17" y="266" width="118" height="52" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="1.4"/>
-<text x="76.0" y="288" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">business goal</text>
-<text x="76.0" y="304" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">changed</text>
-<text x="76.0" y="336" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#6b7280" text-anchor="middle">re-enters G0</text>
-<rect x="151" y="266" width="118" height="52" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="1.4"/>
-<text x="210.0" y="288" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">target, inputs,</text>
-<text x="210.0" y="304" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">thresholds</text>
-<text x="210.0" y="336" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#6b7280" text-anchor="middle">re-enters G1</text>
-<rect x="285" y="266" width="118" height="52" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="1.4"/>
-<text x="344.0" y="288" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">new data</text>
-<text x="344.0" y="304" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">version</text>
-<text x="344.0" y="336" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#6b7280" text-anchor="middle">re-enters G2</text>
-<rect x="419" y="266" width="118" height="52" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="1.4"/>
-<text x="478.0" y="288" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">model or</text>
-<text x="478.0" y="304" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">code change</text>
-<text x="478.0" y="336" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#6b7280" text-anchor="middle">re-enters G3</text>
-<rect x="553" y="266" width="118" height="52" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="1.4"/>
-<text x="612.0" y="288" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">new evaluation</text>
-<text x="612.0" y="304" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">data or labels</text>
-<text x="612.0" y="336" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#6b7280" text-anchor="middle">re-enters G4</text>
-<rect x="687" y="266" width="118" height="52" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="1.4"/>
-<text x="746.0" y="288" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">promote or</text>
-<text x="746.0" y="304" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#1f2937" text-anchor="middle">roll back</text>
-<text x="746.0" y="336" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#6b7280" text-anchor="middle">re-enters G5</text>
-<polyline points="931,192 931,366 76.0,366" fill="none" stroke="#1d4ed8" stroke-width="1.8"/>
-<polyline points="76.0,366 76.0,348" fill="none" stroke="#1d4ed8" stroke-width="1.8" marker-end="url(#ab)"/>
-<polyline points="210.0,366 210.0,348" fill="none" stroke="#1d4ed8" stroke-width="1.8" marker-end="url(#ab)"/>
-<polyline points="344.0,366 344.0,348" fill="none" stroke="#1d4ed8" stroke-width="1.8" marker-end="url(#ab)"/>
-<polyline points="478.0,366 478.0,348" fill="none" stroke="#1d4ed8" stroke-width="1.8" marker-end="url(#ab)"/>
-<polyline points="612.0,366 612.0,348" fill="none" stroke="#1d4ed8" stroke-width="1.8" marker-end="url(#ab)"/>
-<polyline points="746.0,366 746.0,348" fill="none" stroke="#1d4ed8" stroke-width="1.8" marker-end="url(#ab)"/>
-<text x="24" y="388" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="400" fill="#1d4ed8" text-anchor="start">A trigger fired or something changed: classify it, then re-enter at the matching gate above.</text>
-<rect x="17" y="402" width="926" height="52" rx="8" fill="#ffffff" stroke="#d5d9e0" stroke-width="1.2"/>
-<text x="32" y="424" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="400" fill="#1f2937" text-anchor="start">Why a change is noticed: every approval is stored with the hash of what it covered (the file, the DVC data version, the MLflow run).</text>
-<text x="32" y="443" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="400" fill="#6b7280" text-anchor="start">Edit intent.md, change the data, or train again, and the gate reports stale on its own. Production keeps serving until the new model passes G5.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 664" width="1200" height="664" role="img" aria-labelledby="t d">
+<title id="t">ML development life cycle (MLDLC)</title>
+<desc id="d">Six gates from intent to release, then operate. Each gate has a skill. A person approves intent, spec and release; checks decide data, build and evaluate. A change re-enters the earliest gate it touches and makes every later gate stale.</desc>
+<style>
+:root{--sheet:#FFFFFF;--poche:#F5F5F5;--ink:#111111;--on-ink:#FFFFFF;--muted:#5C5C5C;--muted-inv:#BDBDBD;--hair:#D9D9D9;--red:#CC3A1C}
+@media (prefers-color-scheme:dark){:root{--sheet:#121212;--poche:#1E1E1E;--ink:#FFFFFF;--on-ink:#121212;--muted:#B3B3B3;--muted-inv:#4D4D4D;--hair:#333333;--red:#FF7A5C}}
+text{font-family:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;fill:var(--ink)}
+.kick,.lab,.dt{font-family:'IBM Plex Sans Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif;text-transform:uppercase;font-weight:600}
+.kick{font-size:13px;letter-spacing:.1em;fill:var(--muted)}
+.lab{font-size:13px;letter-spacing:.1em}
+.dt{font-size:20px;letter-spacing:.06em;fill:var(--red)}
+.mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px}
+.disp{font-size:32px;font-weight:400}
+.num{font-size:64px;font-weight:300}
+.head{font-size:18px;font-weight:500}
+.body{font-size:14px;fill:var(--muted)}
+.cap{font-size:12px;fill:var(--muted)}
+.hand{font-family:'Architects Daughter','Bradley Hand','Segoe Print',cursive;font-size:15px;fill:var(--red)}
+.on{fill:var(--on-ink)}.inv{fill:var(--muted-inv)}.m{fill:var(--muted)}.r{fill:var(--red)}
+.box{fill:var(--sheet);stroke:var(--ink);stroke-width:1}
+.person{fill:var(--ink)}.poche{fill:var(--poche)}
+.card{fill:var(--sheet);stroke:var(--hair);stroke-width:1}
+.flow{fill:none;stroke:var(--ink);stroke-width:1}
+.red{fill:none;stroke:var(--red);stroke-width:1.5}
+.rule{stroke:var(--hair);stroke-width:1}
+</style>
+<defs><marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink)"/></marker><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--red)"/></marker></defs>
+<rect width="1200" height="664" style="fill:var(--sheet);stroke:var(--hair)"/>
+<text class="kick" x="48" y="72">ML development life cycle · MLDLC</text>
+<text class="disp" x="48" y="112">A change re-enters at the earliest gate it touches</text>
+<text class="body" x="48" y="140">Each gate has a skill. Checks decide what they can. A person decides the rest.</text>
+<rect x="48" y="162" width="14" height="14" class="person"/>
+<text class="cap" x="70" y="173" style="fill:var(--ink)">A person approves</text>
+<rect x="212" y="162" width="14" height="14" class="box"/>
+<text class="cap" x="234" y="173" style="fill:var(--ink)">Checks decide</text>
+<rect x="352.5" y="162.5" width="13" height="13" class="poche" style="stroke:var(--hair)"/>
+<text class="cap" x="374" y="173" style="fill:var(--ink)">Not a gate: triggers watch the production model</text>
+<text class="cap" x="48" y="208">ADLC · Author</text>
+<rect x="48" y="216" width="112" height="112" class="person"/>
+<text class="mono inv" x="62" y="242">G0</text>
+<text class="head on" x="62" y="270">Intent</text>
+<text class="mono inv" x="62" y="292">intent.md</text>
+<text class="lab on" x="62" y="316">person</text>
+<text class="mono m" x="48" y="348">mldlc-intent</text>
+<polyline class="flow" points="163,272 179,272" marker-end="url(#ak)"/>
+<text class="cap" x="182" y="208">ADLC · Author</text>
+<rect x="182" y="216" width="112" height="112" class="person"/>
+<text class="mono inv" x="196" y="242">G1</text>
+<text class="head on" x="196" y="270">Spec</text>
+<text class="mono inv" x="196" y="292">spec.md</text>
+<text class="lab on" x="196" y="316">person</text>
+<text class="mono m" x="182" y="348">mldlc-spec</text>
+<polyline class="flow" points="297,272 313,272" marker-end="url(#ak)"/>
+<text class="cap" x="316" y="208">ADLC · Discover</text>
+<rect x="316.5" y="216.5" width="111" height="111" class="box"/>
+<text class="mono m" x="330" y="242">G2</text>
+<text class="head" x="330" y="270">Data</text>
+<text class="cap m" x="330" y="292">DVC, contracts</text>
+<text class="lab" x="330" y="316">checks</text>
+<text class="mono m" x="316" y="348">mldlc-data</text>
+<polyline class="flow" points="431,272 447,272" marker-end="url(#ak)"/>
+<text class="cap" x="450" y="208">ADLC · Scaffold</text>
+<rect x="450.5" y="216.5" width="111" height="111" class="box"/>
+<text class="mono m" x="464" y="242">G3</text>
+<text class="head" x="464" y="270">Build</text>
+<text class="cap m" x="464" y="292">run + model</text>
+<text class="lab" x="464" y="316">checks</text>
+<text class="mono m" x="450" y="348">mldlc-build</text>
+<polyline class="flow" points="565,272 581,272" marker-end="url(#ak)"/>
+<text class="cap" x="584" y="208">ADLC · Test</text>
+<rect x="584.5" y="216.5" width="111" height="111" class="box"/>
+<text class="mono m" x="598" y="242">G4</text>
+<text class="head" x="598" y="270">Evaluate</text>
+<text class="cap m" x="598" y="292">acceptance</text>
+<text class="lab" x="598" y="316">checks</text>
+<text class="mono m" x="584" y="348">mldlc-evaluate</text>
+<polyline class="flow" points="699,272 715,272" marker-end="url(#ak)"/>
+<text class="cap" x="718" y="208">ADLC · Deploy</text>
+<rect x="718" y="216" width="112" height="112" class="person"/>
+<text class="mono inv" x="732" y="242">G5</text>
+<text class="head on" x="732" y="270">Release</text>
+<text class="cap inv" x="732" y="292">card + alias</text>
+<text class="lab on" x="732" y="316">person</text>
+<text class="mono m" x="718" y="348">mldlc-release</text>
+<polyline class="flow" points="833,272 849,272" marker-end="url(#ak)"/>
+<text class="cap" x="852" y="208">ADLC · Observe</text>
+<rect x="852" y="216" width="112" height="112" class="poche"/>
+<text class="head" x="866" y="246">Operate</text>
+<text class="cap" x="866" y="270">triggers watch</text>
+<text class="cap" x="866" y="286">the production</text>
+<text class="cap" x="866" y="302">model</text>
+<text class="mono m" x="852" y="348">mldlc-operate</text>
+<polyline class="red" points="956,328 956,504 104,504"/>
+<circle cx="956" cy="328" r="3" class="r"/>
+<rect x="48.5" y="396.5" width="111" height="75" class="card"/>
+<text class="lab" x="62" y="422">re-enters G0</text>
+<text class="cap" x="62" y="442">business goal</text>
+<text class="cap" x="62" y="458">changed</text>
+<polyline class="red" points="104,504 104,474" marker-end="url(#ar)"/>
+<rect x="182.5" y="396.5" width="111" height="75" class="card"/>
+<text class="lab" x="196" y="422">re-enters G1</text>
+<text class="cap" x="196" y="442">target, inputs,</text>
+<text class="cap" x="196" y="458">thresholds</text>
+<polyline class="red" points="238,504 238,474" marker-end="url(#ar)"/>
+<rect x="316.5" y="396.5" width="111" height="75" class="card"/>
+<text class="lab" x="330" y="422">re-enters G2</text>
+<text class="cap" x="330" y="442">new data</text>
+<text class="cap" x="330" y="458">version</text>
+<polyline class="red" points="372,504 372,474" marker-end="url(#ar)"/>
+<rect x="450.5" y="396.5" width="111" height="75" class="card"/>
+<text class="lab" x="464" y="422">re-enters G3</text>
+<text class="cap" x="464" y="442">model or</text>
+<text class="cap" x="464" y="458">code change</text>
+<polyline class="red" points="506,504 506,474" marker-end="url(#ar)"/>
+<rect x="584.5" y="396.5" width="111" height="75" class="card"/>
+<text class="lab" x="598" y="422">re-enters G4</text>
+<text class="cap" x="598" y="442">new evaluation</text>
+<text class="cap" x="598" y="458">data or labels</text>
+<polyline class="red" points="640,504 640,474" marker-end="url(#ar)"/>
+<rect x="718.5" y="396.5" width="111" height="75" class="card"/>
+<text class="lab" x="732" y="422">re-enters G5</text>
+<text class="cap" x="732" y="442">promote or</text>
+<text class="cap" x="732" y="458">roll back</text>
+<polyline class="red" points="774,504 774,474" marker-end="url(#ar)"/>
+<line x1="300" y1="522" x2="300" y2="506" style="stroke:var(--red);stroke-width:1"/>
+<circle cx="300" cy="504" r="2.5" class="r"/>
+<text class="hand" x="292" y="542">a trigger fires, or something changes: classify it, then re-enter</text>
+<circle cx="64" cy="582" r="16" class="red"/>
+<text class="lab r" x="64" y="587" text-anchor="middle" style="font-size:15px;letter-spacing:0">1</text>
+<text class="dt" x="92" y="588">The gates, and how a change re-enters</text>
+<line x1="48" y1="600" x2="964" y2="600" style="stroke:var(--red);stroke-width:1.5"/>
+<text class="cap" x="48" y="622">Every approval is stored with the hash of what it covered: the file, the DVC data version and the MLflow run.</text>
+<text class="cap" x="48" y="640">Edit intent.md, change the data or train again, and the gate reports stale on its own. Production keeps serving until the new model passes G5.</text>
+<line x1="988" y1="48" x2="988" y2="616" style="stroke:var(--ink);stroke-width:3"/>
+<g transform="translate(1008 56) scale(0.625)"><path d="M11.317 49.355 A27 27 0 1 1 52.683 49.355" fill="none" style="stroke:var(--ink)" stroke-width="6"/><path d="M18.977 42.927 A17 17 0 1 1 45.023 42.927" fill="none" style="stroke:var(--ink)" stroke-width="6"/><circle cx="32" cy="32" r="6" fill="#CC3A1C"/></g>
+<text x="1136" y="300" transform="rotate(-90 1136 300)" style="font-size:13px;font-weight:500;letter-spacing:.2em">THE MAJLIS OF AI</text>
+<text class="kick" x="1008" y="140">Project</text>
+<text class="mono" x="1008" y="160">mldlc-kit</text>
+<line class="rule" x1="1008" y1="170" x2="1112" y2="170"/>
+<text class="kick" x="1008" y="192">Sheet</text>
+<text class="mono" x="1008" y="212">Life cycle</text>
+<line class="rule" x1="1008" y1="222" x2="1112" y2="222"/>
+<text class="kick" x="1008" y="244">Version</text>
+<text class="mono" x="1008" y="264">0.1.0</text>
+<line class="rule" x1="1008" y1="274" x2="1112" y2="274"/>
+<text class="kick" x="1008" y="296">Date</text>
+<text class="mono" x="1008" y="316">2026-11-14</text>
+<line class="rule" x1="1008" y1="326" x2="1112" y2="326"/>
+<text class="num" x="1008" y="608">A1</text>
 </svg>

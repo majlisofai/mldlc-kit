@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Documentation carries The Majlis of AI brand: the lockup and symbol, and the life-cycle figure redrawn as a
+  drawing sheet in white, black and one redline, with a dark theme.
+
 ## 0.1.0
 
 First release.

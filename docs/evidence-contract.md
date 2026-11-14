@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/majlis-symbol-reversed.svg">
+  <img src="assets/brand/majlis-symbol.svg" alt="The Majlis of AI" width="40" align="right">
+</picture>
+
 # The evidence contract
 
 A project meets the gates by leaving evidence in MLflow and in two files. Nothing here depends on a

@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/majlis-symbol-reversed.svg">
+  <img src="assets/brand/majlis-symbol.svg" alt="The Majlis of AI" width="40" align="right">
+</picture>
+
 # Adopting mldlc in a project
 
 ## A new project

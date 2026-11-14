@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/brand/majlis-lockup-reversed.svg">
+    <img src="docs/assets/brand/majlis-lockup.svg" alt="The Majlis of AI" width="220">
+  </picture>
+</p>
+
 # mldlc-kit: a gated ML life cycle for new projects
 
 `mldlc-kit` takes an ML model from `intent.md` and `spec.md` to production, and back through the right gate
@@ -132,3 +139,14 @@ real commands and gates, and stays free of anything specific to one project.
 ## License
 
 [MIT](LICENSE), copyright The Majlis of AI. Issues and pull requests are welcome.
+
+---
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/brand/majlis-symbol-reversed.svg">
+    <img src="docs/assets/brand/majlis-symbol.svg" alt="The Majlis of AI" width="32">
+  </picture>
+  <br>
+  <sub>Counsel for AI in regulated institutions.</sub>
+</p>

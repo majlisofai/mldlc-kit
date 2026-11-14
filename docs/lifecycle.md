@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/majlis-symbol-reversed.svg">
+  <img src="assets/brand/majlis-symbol.svg" alt="The Majlis of AI" width="40" align="right">
+</picture>
+
 # The life cycle
 
 A model's life runs from an idea to production and back again whenever something changes. `mldlc` models it
