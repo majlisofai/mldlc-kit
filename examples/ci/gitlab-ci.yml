@@ -1,0 +1,31 @@
+# Refuse to train or deploy a model whose life-cycle gates are not valid. Copy into your .gitlab-ci.yml.
+# Needs MLFLOW_TRACKING_URI as a CI variable. The kit is installed from its public repository.
+
+stages: [gates, train, release]
+
+.mldlc:
+  image: python:3.12-slim
+  before_script:
+    - pip install --quiet "mldlc-kit @ git+https://github.com/majlisofai/mldlc-kit.git@v0.1.0"
+
+spec-approved:            # a merge request that trains must come with an approved intent and spec
+  extends: .mldlc
+  stage: gates
+  script: mldlc status --require G0,G1
+
+train:
+  extends: .mldlc
+  stage: train
+  needs: [spec-approved]
+  script:
+    - pip install --quiet -r requirements.txt
+    - python validate.py
+    - mldlc status --require G0,G1       # the data gate (G2) is approved after validation, by a person or a job
+    - python train.py
+
+release-ready:            # on the default branch, every gate through acceptance must still be valid
+  extends: .mldlc
+  stage: release
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script: mldlc status --require G0,G1,G2,G3,G4

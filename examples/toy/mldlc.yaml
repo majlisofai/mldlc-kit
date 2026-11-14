@@ -1,0 +1,24 @@
+# Worked example: a toy customer-churn project that uses mldlc the way a new project would.
+project: toy-churn
+lifecycle_dir: lifecycle
+
+mlflow:
+  training_experiment: toy-churn
+  validation_experiment: toy-churn-data-validation
+  model_name: toy-churn
+  production_alias: production
+
+data:
+  type: file                 # the CSV is hashed; edit it and the data gate goes stale
+  path: data/train.csv
+
+code_paths: ["."]
+baseline_metric: uplift_vs_baseline
+allowed_metrics: ["holdout_*", "baseline_accuracy", "uplift_vs_baseline"]
+
+hooks: hooks
+
+commands:
+  validate: python validate.py
+  train: python train.py
+  test: pytest -q
