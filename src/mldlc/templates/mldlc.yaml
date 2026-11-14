@@ -1,0 +1,32 @@
+# mldlc configuration. Paths are relative to this file.
+project: {project}
+lifecycle_dir: lifecycle
+
+mlflow:
+  # tracking_uri: http://127.0.0.1:5000    # the MLFLOW_TRACKING_URI environment variable wins
+  training_experiment: {project}
+  validation_experiment: {project}-data-validation
+  model_name: {project}
+  production_alias: production
+
+# What identifies a version of the data, so a change makes the gates stale.
+#   dvc:     path to the .dvc file          file: path to one file (hashed)       command: a shell command that prints a version
+data:
+  type: none
+  # type: file
+  # path: data/train.csv
+
+# Uncommitted changes under these paths make a training run "dirty", and G3 refuses it.
+code_paths: ["."]
+
+# The metric a candidate must beat the baseline on (acceptance needs min > 0), and which metric names specs may use.
+baseline_metric: uplift_vs_baseline
+allowed_metrics: ["*"]
+
+# hooks: mldlc_hooks        # a python module here with model_inputs(), serving_columns(), smoke_payload()
+
+# Shown by `mldlc info`; the skills tell people to run them.
+commands:
+  validate: TODO
+  train: TODO
+  test: TODO

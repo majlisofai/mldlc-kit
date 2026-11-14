@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mldlc-kit"
+version = "0.1.0"
+description = "A gated ML development life cycle: skills for each stage, and the checks that decide each gate"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "The Majlis of AI" }]
+keywords = ["mlops", "mlflow", "claude-code", "ai-agents", "governance", "lifecycle"]
+requires-python = ">=3.10"
+dependencies = [
+    "mlflow>=3.0",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "scikit-learn>=1.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/majlisofai/mldlc-kit"
+Repository = "https://github.com/majlisofai/mldlc-kit"
+Issues = "https://github.com/majlisofai/mldlc-kit/issues"
+Changelog = "https://github.com/majlisofai/mldlc-kit/blob/main/CHANGELOG.md"
+
+[project.scripts]
+mldlc = "mldlc.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mldlc"]
+
+# The plugin's skills live at the repo root (the plugin layout); ship the same files inside the wheel so
+# `mldlc skills install` works from a plain `pip install`.
+[tool.hatch.build.targets.wheel.force-include]
+"skills" = "mldlc/skills"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
